@@ -12,6 +12,5 @@ public class SequenceRange {
         this.matchingOnLeft = left;
         this.matchingOnRight = right;
         this.longestRange = longest;
-        this.sequenceLength = length;
     }
 }
