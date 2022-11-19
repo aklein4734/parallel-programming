@@ -6,9 +6,9 @@ package getLongestSequence;
  */
 public class SequenceRange {
     public int matchingOnLeft, matchingOnRight;
-    public int longestRange, sequenceLength;
+    public int longestRange;
 
-    public SequenceRange(int left, int right, int longest, int length) {
+    public SequenceRange(int left, int right, int longest) {
         this.matchingOnLeft = left;
         this.matchingOnRight = right;
         this.longestRange = longest;
