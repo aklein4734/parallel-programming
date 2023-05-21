@@ -8,9 +8,9 @@ public class SequenceRange {
     public int matchingOnLeft, matchingOnRight;
     public int longestRange;
 
-    public SequenceRange(int left, int right, int longest) {
-        this.matchingOnLeft = left;
-        this.matchingOnRight = right;
-        this.longestRange = longest;
+    public SequenceRange(int matchingOnLeft, int matchingOnRight, int longestRange) {
+        this.matchingOnLeft = matchingOnLeft;
+        this.matchingOnRight = matchingOnRight;
+        this.longestRange = longestRange;
     }
 }
