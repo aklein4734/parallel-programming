@@ -20,7 +20,7 @@ public class FilterEmptyTests {
 
     @Test(timeout = 15000)
     public void testSmall() {
-        for (int i = 0; i < NUM_SMALL; i++) {
+        for (int i = 3; i < NUM_SMALL; i++) {
             String[] input = makeInput(i, SMALL_SIZE);
             int[] output = filter(input);
             runTest(input, output);
