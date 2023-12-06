@@ -44,7 +44,6 @@ public class FilterEmpty {
 
     /* TODO: Add a sequential method and parallel task here */
     public static int[] sequentialMapToBitSet(String[] arr, int[] bits, int lo, int hi) {
-        //int[] test = new int[hi - lo];
         for (int i = lo; i < hi; i++) {
             if (arr[i].getBytes().length != 0) bits[i] = 1;
             else bits[i] = 0;
@@ -85,6 +84,9 @@ public class FilterEmpty {
 
     public static int[] mapToOutput(String[] input, int[] bits, int[] bitsum) {
         /* TODO: Edit this with your code */
+        if (bitsum.length == 0) {
+            return bitsum;
+        }
         int[] result = new int[bitsum[bitsum.length - 1]];
         return POOL.invoke(new mapToOutputTask(result, input, bits, bitsum, 0, input.length));
     }
